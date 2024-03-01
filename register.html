@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <title>HomePage</title>
+
+<head>
+    <title>HomePage</title>
 </head>
 <hr>
 <style>
-    #divContainer 
-    {
+    #divContainer {
         text-align: left;
     }
 
-    .redText 
-    {
+    .redText {
         color: rgb(144, 245, 249);
         background-color: rgb(7, 7, 7);
     }
 
-    .redText:hover 
-    {
+    .redText:hover {
         color: rgb(9, 9, 19);
     }
 
-    input 
-    {
+    input {
         text-align: center;
     }
 
-    #btnLogin:hover
-    {
-        
+    #btnLogin:hover {
+
         cursor: pointer;
         font-size: large;
         color: rgb(151, 243, 243);
     }
-
 </style>
 
 <body style="background-color: rgb(229, 162, 248);">
@@ -42,35 +38,45 @@
     <div style="text-align: center;">
         <div style="margin-bottom: 1rem;">
 
-            <input type="password" placeholder="First Name" class="redText"/>
-    </div>
+            <input type="password" placeholder="First Name" class="redText" />
+        </div>
         <div style="margin-bottom: 1rem;">
 
-            <input type="password" placeholder="Last Name" class="redText"/>
-    </div>
-
-        <div style="margin-bottom: 1rem;">
-
-            <input type="text" placeholder="Username" class="redText"/>
+            <input type="password" placeholder="Last Name" class="redText" />
         </div>
 
-    <div style="margin-bottom: 1rem;">
+        <div style="margin-bottom: 1rem;">
 
-            <input type="password" placeholder="Password" class="redText"/>
-    </div>
-    <div style="margin-bottom: 1rem;">
+            <input type="text" placeholder="Username" class="redText" />
+        </div>
 
-        <input type="password" placeholder="Confirm Password" class="redText"/>
-</div>
+        <div style="margin-bottom: 1rem;">
 
-    <div>
-        <button id="" style="color: rgb(229, 166, 228);">Register</button>
-        <button style="color: rgb(229, 164, 248);">Cancel</button>
-    </div>
-    <div>
-    </div>
+            <input type="password" placeholder="Password" class="redText" />
+        </div>
+        <div style="margin-bottom: 1rem;">
+
+            <input type="password" placeholder="Confirm Password" class="redText" />
+        </div>
+
+        <div>
+            <a href="./index.html"> 
+                <button id="btnLogin" style="color: rgb(229, 166, 228);">Register</button>
+            </a> 
+            <a href="./index.html"> 
+                <button style="color: rgb(229, 164, 248);">Cancel</button>
+            </a>
+        </div>
+        <div>
+        </div>
     </div>
     <hr>
-
+    <script>
+        let buttonLogin = document.querySelector('#btnlogin');
+        buttonLogin.onclick = function () {
+            alert("Succesfully")
+        }
+    </script>
 </body>
+
 </html>
